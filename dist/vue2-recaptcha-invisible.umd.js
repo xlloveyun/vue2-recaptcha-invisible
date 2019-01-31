@@ -47,7 +47,7 @@
       };
       var recaptchaScript = document.createElement('script');
       var language = this.dataLanguage ? ("&hl=" + (this.dataLanguage)) : '';
-      recaptchaScript.setAttribute('src', ("https://www.google.com/recaptcha/api.js?onload=vueRecaptchaInit&render=explicit" + language));
+      recaptchaScript.setAttribute('src', ("https://www.recaptcha.net/recaptcha/api.js?onload=vueRecaptchaInit&render=explicit" + language));
       recaptchaScript.setAttribute('async', '');
       recaptchaScript.setAttribute('defer', '');
       (document.body || document.head).appendChild(recaptchaScript);
